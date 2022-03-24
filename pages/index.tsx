@@ -16,6 +16,9 @@ export default function Home() {
       <h2>投稿一覧</h2>
       <ul>
         <li>
+          {
+            // リンクは上に追加する
+          }
           <Link href="/posts/test"> test </Link>
         </li>
       </ul>
