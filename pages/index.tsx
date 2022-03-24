@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>ねこまたの日記 </h1>
+      <img src="/images/icon.jpg" height="200px"></img>
       <h2>自己紹介</h2>
       ねこです。にゃーん。
       <h2>投稿一覧</h2>
