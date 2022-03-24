@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -10,6 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       ねこです。にゃーん。
+      <h2>投稿一覧</h2>
+      <ul>
+        <li>
+          <Link href="/posts/test"> test </Link>
+        </li>
+      </ul>
     </div>
   );
 }
