@@ -2,4 +2,4 @@
 
 ## サイトの URL
 
-https://kyones.github.io
+https://kyon.earth
