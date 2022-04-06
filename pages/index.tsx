@@ -7,7 +7,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>ねこまたの日記</title>
-        <meta name="description" content="現在設定中" />
+        <meta
+          name="description"
+          content="ねこまたです。よろしくおねがいします。"
+        />
         <link rel="icon" href="/images/icon.jpg" />
       </Head>
       <h1>ねこまたの日記 </h1>
