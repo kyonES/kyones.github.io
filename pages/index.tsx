@@ -39,7 +39,7 @@ export default function Home() {
           {
             // リンクは上に追加する
           }
-          <Link href="/posts/1post">2022/04/06 初めての投稿 </Link>
+          <Link href="/posts/postno1">2022/04/06 初めての投稿 </Link>
         </li>
       </ul>
     </div>
