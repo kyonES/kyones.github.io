@@ -14,7 +14,7 @@ export default function Home() {
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>自己紹介</h2>
       ねこまたです。よろしくおねがいします。大学での主専攻である地球科学(物理)を勉強する傍、ゆるくPython、JavaScript、Haskellなどを触っています。
-      このサイトでは技術記事の他、趣味のアフタヌーンティーの記録を書き連ねていこうと思っています。
+      このサイトでは技術記事の他、趣味のアフタヌーンティー、カフェ巡りの記録を書き連ねていこうと思っています。
       にゃーん。
       <h2>リンク</h2>
       <li>
@@ -39,7 +39,7 @@ export default function Home() {
           {
             // リンクは上に追加する
           }
-          <Link href="/posts/test"> test </Link>
+          <Link href="/posts/1post"> test </Link>
         </li>
       </ul>
     </div>
