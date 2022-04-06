@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>ねこまたの日記</title>
         <meta name="description" content="現在設定中" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icon.jpg" />
       </Head>
       <h1>ねこまたの日記 </h1>
       <img src="/images/icon.jpg" height="200px"></img>
