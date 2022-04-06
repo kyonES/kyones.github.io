@@ -21,20 +21,16 @@ export default function Home() {
       にゃーん。
       <h2>リンク</h2>
       <li>
-        github:{" "}
-        <a href="https://github.com/kyonES">https://github.com/kyonES</a>
+        {" "}
+        <a href="https://github.com/kyonES">github</a>
       </li>
       <li>
-        Twitter:{" "}
-        <a href="https://twitter.com/what_is_pyoni">
-          https://twitter.com/what_is_pyoni
-        </a>
+        {" "}
+        <a href="https://twitter.com/what_is_pyoni">Twitter</a>
       </li>
       <li>
-        Instagram:{" "}
-        <a href="https://www.instagram.com/sub_neko">
-          https://www.instagram.com/sub_neko
-        </a>
+        {" "}
+        <a href="https://www.instagram.com/sub_neko">Instagram</a>
       </li>
       <h2>投稿一覧</h2>
       <ul>
