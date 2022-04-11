@@ -20,18 +20,30 @@ export default function Home() {
       このサイトでは技術記事の他、趣味のアフタヌーンティー、カフェ巡りの記録を書き連ねていこうと思っています。
       にゃーん。
       <h2>リンク</h2>
-      <li>
-        {" "}
-        <a href="https://github.com/kyonES">github</a>
-      </li>
-      <li>
-        {" "}
-        <a href="https://twitter.com/what_is_pyoni">Twitter</a>
-      </li>
-      <li>
-        {" "}
-        <a href="https://www.instagram.com/sub_neko">Instagram</a>
-      </li>
+      <ul className="sample">
+        <li>
+          {" "}
+          <a href="https://github.com/kyonES">
+            <img src="/images/GitHub-Mark-120px-plus.png" height="50px"></img>
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a href="https://twitter.com/what_is_pyoni">
+            {" "}
+            <img src="/images/2021 Twitter logo - blue.png" height="50px"></img>
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a href="https://www.instagram.com/sub_neko">
+            <img
+              src="/images/Instagram_Glyph_Gradient_RGB.png"
+              height="50px"
+            ></img>
+          </a>
+        </li>
+      </ul>
       <h2>投稿一覧</h2>
       <ul>
         <li>

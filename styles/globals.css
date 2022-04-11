@@ -32,3 +32,10 @@ h2{
 a {
   color:rgb(245, 109, 145);
 }
+.sample li {
+  display: inline;
+   width:100%;
+   padding: 10px;
+  }
+  
+  
