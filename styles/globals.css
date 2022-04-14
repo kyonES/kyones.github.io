@@ -1,6 +1,7 @@
 html {
   background-color:rgb(141, 141, 170);
 }
+
 body {
   background-color: white;
   border-radius: 1rem;
@@ -23,6 +24,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
 h1{
   border-bottom: 1px solid black;
 }
