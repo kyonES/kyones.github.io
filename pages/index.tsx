@@ -15,31 +15,24 @@ export default function Home() {
         />
         <link rel="icon" href="/images/icon.jpg" />
       </Head>
-      <h1>
-        <FontAwesomeIcon icon={faPaw} size="xs" color="rgb(245, 109, 145)" />
-        ねこまたの日記{" "}
-      </h1>
+      <div className="ribbon-wrapper01">
+        <div className="ribbon-content">
+          <span className="ribbon">(=^･ω･^=)</span>
+        </div>
+        <p> ねこまたの日記</p>
+      </div>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
-        <p className="text-background">
-          <span>
-            {" "}
-            <FontAwesomeIcon icon={faPaw} size="xs" />
-            自己紹介
-          </span>
-        </p>
+        {" "}
+        <FontAwesomeIcon icon={faPaw} size="xs" /> 自己紹介
       </h2>
       ねこまたです。よろしくおねがいします。大学での主専攻である地球科学(物理)を勉強する傍、ゆるくPython、JavaScript、Haskellなどを触っています。
       このサイトでは技術記事の他、趣味のアフタヌーンティー、カフェ巡りの記録を書き連ねていこうと思っています。
       にゃーん。
       <h2>
-        <p className="text-background">
-          <span>
-            {" "}
-            <FontAwesomeIcon icon={faPaw} size="xs" />
-            リンク
-          </span>
-        </p>
+        {" "}
+        <FontAwesomeIcon icon={faPaw} size="xs" />
+        リンク
       </h2>
       <ul className="sample">
         <li>
@@ -66,13 +59,9 @@ export default function Home() {
         </li>
       </ul>
       <h2>
-        <p className="text-background">
-          <span>
-            {" "}
-            <FontAwesomeIcon icon={faPaw} size="xs" />
-            投稿一覧
-          </span>
-        </p>
+        {" "}
+        <FontAwesomeIcon icon={faPaw} size="xs" />
+        投稿一覧
       </h2>
       <ul>
         <li>

@@ -21,26 +21,69 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-h1{
+
+{
   font-size: 2.5rem;
   border-bottom: 1px solid black;
 }
-.text-background {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 0.5rem;
-}
-.text-background span {
-  background: linear-gradient(transparent 0%, rgb(251, 172, 193) 0%);
-  padding: 2px;
-  border-radius:10px 10px 10px 10px;
-}
-               
 
+.ribbon-wrapper01{
+  display: block;
+  position: relative;
+  margin: 15px auto;
+  padding: 10px 0;
+  width: 200px;
+  height: 100px;
+  background:rgb(252, 184, 202);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+}
+
+.ribbon-wrapper01 .ribbon-content {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 89px;
+  height: 91px;
+  overflow: hidden;
+  }
+
+.ribbon-wrapper01 .ribbon {
+  display: inline-block;
+  position: absolute;
+  padding: 7px 0;
+  left: -25px;
+  top: 25px;
+  width: 170px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  background:rgb(245, 109, 145) ;
+  color: #FFFFFF;
+  letter-spacing: 0.2em;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon-wrapper01 .ribbon:before,
+.ribbon-wrapper01 .ribbon:after {
+  position: absolute;
+  content: "";
+  border-top: 6px solid #000000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: -6px;
+}
+
+.ribbon-wrapper01 .ribbon:before {
+  left: 15px;
+}
+
+.ribbon-wrapper01 .ribbon:after {
+  right: 20px;
+}
 a {
   color:rgb(245, 109, 145);
 }
