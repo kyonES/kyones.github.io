@@ -19,12 +19,13 @@ export default function Home() {
         <div className="ribbon-content">
           <span className="ribbon">(=^･ω･^=)</span>
         </div>
-        <p> ねこまたの日記</p>
+        <p>ねこまたの日記</p>
       </div>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
         {" "}
-        <FontAwesomeIcon icon={faPaw} size="xs" /> 自己紹介
+        <FontAwesomeIcon icon={faPaw} size="xs" />
+        自己紹介
       </h2>
       ねこまたです。よろしくおねがいします。大学での主専攻である地球科学(物理)を勉強する傍、ゆるくPython、JavaScript、Haskellなどを触っています。
       このサイトでは技術記事の他、趣味のアフタヌーンティー、カフェ巡りの記録を書き連ねていこうと思っています。
