@@ -21,17 +21,25 @@ export default function Home() {
       </h1>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
-        {" "}
-        <FontAwesomeIcon icon={faPaw} size="xs" />
-        自己紹介
+        <p className="text-background">
+          <span>
+            {" "}
+            <FontAwesomeIcon icon={faPaw} size="xs" />
+            自己紹介
+          </span>
+        </p>
       </h2>
       ねこまたです。よろしくおねがいします。大学での主専攻である地球科学(物理)を勉強する傍、ゆるくPython、JavaScript、Haskellなどを触っています。
       このサイトでは技術記事の他、趣味のアフタヌーンティー、カフェ巡りの記録を書き連ねていこうと思っています。
       にゃーん。
       <h2>
-        {" "}
-        <FontAwesomeIcon icon={faPaw} size="xs" />
-        リンク
+        <p className="text-background">
+          <span>
+            {" "}
+            <FontAwesomeIcon icon={faPaw} size="xs" />
+            リンク
+          </span>
+        </p>
       </h2>
       <ul className="sample">
         <li>
@@ -58,9 +66,13 @@ export default function Home() {
         </li>
       </ul>
       <h2>
-        {" "}
-        <FontAwesomeIcon icon={faPaw} size="xs" />
-        投稿一覧
+        <p className="text-background">
+          <span>
+            {" "}
+            <FontAwesomeIcon icon={faPaw} size="xs" />
+            投稿一覧
+          </span>
+        </p>
       </h2>
       <ul>
         <li>
