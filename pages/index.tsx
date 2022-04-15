@@ -19,7 +19,7 @@ export default function Home() {
         <div className="ribbon-content">
           <span className="ribbon">(=^･ω･^=)</span>
         </div>
-        <p>ねこまたの日記</p>
+        <div>ねこまたの日記</div>
       </div>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
