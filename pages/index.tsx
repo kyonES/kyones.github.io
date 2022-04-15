@@ -69,7 +69,14 @@ export default function Home() {
           {
             // リンクは上に追加する
           }
-          <Link href="/posts/2022-04-06">2022/04/06 初めての投稿 </Link>
+          <h3>
+            <Link href="/posts/2002-04-15">2022/04/15 Paserを作ってみた①</Link>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <Link href="/posts/2022-04-06">2022/04/06 初めての投稿</Link>
+          </h3>
         </li>
       </ul>
     </div>
