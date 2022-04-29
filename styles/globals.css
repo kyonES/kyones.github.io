@@ -52,8 +52,6 @@ a {
   color:rgb(245, 109, 145);
 }
 code {
-  margin: 1em 0; /* ブロック前後の余白 */
-  padding: 1em; /* ブロック内の余白 */
   border-radius: 5px; /* 角丸 */
   background-color: #eee !important; /* 背景色 */
   max-width: 350px;
