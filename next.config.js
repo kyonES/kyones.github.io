@@ -1,3 +1,4 @@
+const rehypeHighlight = require("rehype-highlight");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
@@ -7,7 +8,7 @@ const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
-    rehypePlugins: [],
+    rehypePlugins: [rehypeHighlight],
   },
 });
 module.exports = withMDX(nextConfig);
