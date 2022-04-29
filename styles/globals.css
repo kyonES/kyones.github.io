@@ -15,70 +15,24 @@ body {
   max-width: 42rem;
   font-family: "Zen Maru Gothic", sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
-.ribbon-wrapper01{
-  display: block;
+.heading01 {
   position: relative;
-  margin: 15px auto;
-  padding: 20px;
-  width: 300px;
-  height: 100px;
-  font-size:30px;
-  background:rgb(252, 184, 202);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14);
-  box-sizing: border-box;
-  border-radius: 5px;
-  line-height: 80px;
+	padding-bottom: 10px;
+	font-size: 26px;
 }
-
-.ribbon-wrapper01 .ribbon-content {
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  width: 89px;
-  height: 91px;
-  overflow: hidden;
-  }
-
-.ribbon-wrapper01 .ribbon {
-  display: inline-block;
-  position: absolute;
-  padding: 7px 0;
-  left: -25px;
-  top: 25px;
-  width: 170px;
-  text-align: center;
-  font-size: 11px;
-  line-height: 20px;
-  background:rgb(245, 109, 145) ;
-  color: #FFFFFF;
-  letter-spacing: 0.2em;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.ribbon-wrapper01 .ribbon:before,
-.ribbon-wrapper01 .ribbon:after {
-  position: absolute;
-  content: "";
-  border-top: 6px solid #000000;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: -6px;
-}
-
-.ribbon-wrapper01 .ribbon:before {
-  left: 15px;
-}
-
-.ribbon-wrapper01 .ribbon:after {
-  right: 20px;
+.heading01::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-image: repeating-linear-gradient(45deg,rgb(245, 109, 145) 0px, rgb(245, 109, 145) 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%);
+	background-size: 8px 8px;
 }
 a {
   color:rgb(245, 109, 145);

@@ -13,14 +13,9 @@ export default function Home() {
           name="description"
           content="ねこまたです。よろしくおねがいします。"
         />
+        <h2 className="heading01">ねこまたの日記</h2>
         <link rel="icon" href="/images/icon.jpg" />
       </Head>
-      <div className="ribbon-wrapper01">
-        <div className="ribbon-content">
-          <span className="ribbon">(=^･ω･^=)</span>
-        </div>
-        <div>ねこまたの日記</div>
-      </div>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
         {" "}
@@ -70,7 +65,7 @@ export default function Home() {
             // リンクは上に追加する
           }
           <h3>
-            <Link href="/posts/2002-04-15">2022/04/15 Paserを作ってみた①</Link>
+            <Link href="/posts/2022-04-29">2022/04/29 Parserを作ってみた</Link>
           </h3>
         </li>
         <li>
