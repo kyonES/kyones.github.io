@@ -13,9 +13,8 @@ export default function Home() {
           name="description"
           content="ねこまたです。よろしくおねがいします。"
         />
-        <h2 className="heading01">ねこまたの日記</h2>
-        <link rel="icon" href="/images/icon.jpg" />
       </Head>
+      <h2 className="heading01">ねこまたの日記</h2>
       <img src="/images/icon.jpg" height="200px"></img>
       <h2>
         {" "}
