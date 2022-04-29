@@ -22,7 +22,7 @@ a {
 .heading01 {
   position: relative;
 	padding-bottom: 10px;
-	font-size: 26px;
+	font-size: 35px;
 }
 .heading01::after {
 	content: '';
