@@ -16,7 +16,7 @@ class Parser:
         self.s = s
         self.pos = 0
 ```
-self.sは読み込む文字列、self.posは現在の位置を示します。これを用いて後に行うパースで文字を一つ進める処理を行います。
+```self.s``` は読み込む文字列、```self.pos``` は現在の位置を示します。これを用いて後に行うパースで文字を一つ進める処理を行います。
 ```py
 def peek(self):
 if self.pos < len(self.s):
@@ -24,7 +24,7 @@ if self.pos < len(self.s):
 else:
     raise ParseError()
 ```
-self.posが読み込む文字列の長さより小さいとき、読み込む文字列のself.pos番目(=現在の位置)を返す関数を定義します。
+```self.pos``` が読み込む文字列の長さより小さいとき、読み込む文字列の```self.pos``` 番目(=現在の位置)を返す関数を定義します。
 
 <u><h4>1. spaceのパース</h4></u>
 ```py
@@ -42,7 +42,7 @@ while True:
 spaceを無視するようにします。
 
 <u><h4>2. stringのパース</h4></u>
-stringをパースするためには、文字であるcharのパースを行い、string()の中でchar()を呼び出す必要があります。
+```string```をパースするためには、文字である```char```のパースを行い、```string``` 関数の中で```char``` 関数を呼び出す必要があります。
 ```py
 def char(self):
 c = self.peek()
@@ -71,8 +71,8 @@ else:
     self.pos += 1
     return c
 ```
-ここでは文字列が"のときエラーを返し、\n、\r、\t、\\\、\が出てきた場合はそれぞれ中身を変えずに返し、その他のエスケープシーケンス
-が出てきた場合にもエラーを返しています。
+ここでは文字列が```"``` のときエラーを返し、```\n、\r、\t、\\\、\``` が出てきた場合はそれぞれ中身を変えずに返し、その他のエスケープシーケンス
+が出てきた場合にもエラーを返します。
 ```py
 def string(self):
 res = ""
@@ -88,4 +88,51 @@ while True:
     x = self.char()
     res += x 
 ```
+まず ```self.peek``` 関数を呼び出して文字列の先頭の文字を取得し、```"``` から始まっていなければエラーを返します。```"``` から始まっていればJSONの文字列であることから、```self.pos``` を1進めてパースを続けます。その後、```char``` 関数を呼び出し、文字列の末尾が"になるまでパースします。文字列の中でパースを終えた部分の文字を```res``` に追加していき、最後に```res``` を返します。これで文字列のパースが完了します。
 
+<u><h4>3. arrayのパース</h4></u>
+```array``` をパースするためには、```,``` で区切られた配列の要素を先頭から順に調べる必要があります。
+```py
+def array(self):
+res = []
+c = self.peek()
+if c != "[":
+    raise ParseError()
+self.pos += 1
+self.spaces()
+c = self.peek()
+if c == "]":
+    self.pos += 1
+    return res
+x = self.json()
+res.append(x)
+while True:
+    self.spaces()
+    c = self.peek()
+    if c == "]":
+        self.pos += 1
+        return res
+    if c != ",":
+        raise ParseError()
+    self.pos += 1
+    self.spaces()
+    x = self.json()
+    res.append(x)
+    ```
+まず ```self.peek``` 関数を呼び出して文字列の先頭の文字を取得し、```[``` から始まっていなければエラーを返します。```self.pos``` を一つ進め、```spaces``` 関数を呼び出し、配列の中に含まれるスペースを無視します。次に、もう一度```self.peek``` 関数を呼び出し、配列の末尾が```]``` になっていれば```res``` を返して終了します。末尾が```]``` でなければ```json``` 関数を呼び出し、```res``` に```x``` を追加します。次に、再びスペースを無視し、配列の先頭を取得します。```while``` の中では、配列の末尾が```]``` になるまでパースを続けます。配列の先頭```[``` を除いた先頭の文字の次の文字が```,``` でなければ エラーを返し、```]``` が再び現れるまでパースを続けます。
+```py
+def json(self):
+c = self.peek()
+if c == "[":
+    return self.array()
+if c == "t" or c == "f":
+    return self.boolean()
+if c == "n":
+    return self.null()
+if c == "\"":
+    return self.string()
+if c == "{":
+    return self.object()
+return self.parse_natural()
+```  
+↑```json```関数
