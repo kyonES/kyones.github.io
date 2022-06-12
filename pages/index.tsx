@@ -14,19 +14,11 @@ export default function Home() {
           content="ねこまたです。よろしくおねがいします。"
         />
       </Head>
-      <h2 className="heading01">ねこまたの日記</h2>
-      <img src="/images/icon.jpg" height="200px"></img>
+      <h2 className="heading01">ねこまたの日記</h2>{" "}
+      <img src="images/icon.jpg" height="200px"></img>
       <h2>
-        {" "}
         <FontAwesomeIcon icon={faPaw} size="xs" />
-        自己紹介
-      </h2>
-      ねこまたです。よろしくおねがいします。大学での主専攻である地球科学(物理)を勉強する傍、ゆるくPython、JavaScript、Haskellなどを触っています。
-      にゃーん。
-      <h2>
-        {" "}
-        <FontAwesomeIcon icon={faPaw} size="xs" />
-        リンク
+        Links
       </h2>
       <ul className="sample">
         <li>
@@ -53,11 +45,15 @@ export default function Home() {
         </li>
       </ul>
       <h2>
-        {" "}
         <FontAwesomeIcon icon={faPaw} size="xs" />
-        投稿一覧
+        Posts
       </h2>
       <ul>
+        <li>
+          <h3>
+            <Link href="/posts/2022-06-04">2022/06/04 Kaggle再入門</Link>
+          </h3>
+        </li>
         <li>
           {
             // リンクは上に追加する
