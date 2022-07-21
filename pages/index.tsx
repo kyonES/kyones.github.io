@@ -51,6 +51,13 @@ export default function Home() {
       <ul>
         <li>
           <h3>
+            <Link href="/posts/2022-07-21">
+              2022/07/21 アルゴリズムの勉強をする①
+            </Link>
+          </h3>
+        </li>
+        <li>
+          <h3>
             <Link href="/posts/2022-06-04">2022/06/04 Kaggle再入門</Link>
           </h3>
         </li>
@@ -70,6 +77,26 @@ export default function Home() {
           </h3>
         </li>
       </ul>
+      <button
+        onClick={() => {
+          var arr = ["a", "b", "c", "d"];
+          var chr = arr[Math.floor(Math.random() * arr.length)];
+          var min = 1;
+          var max = 102;
+          var ran = Math.floor(Math.random() * (max + 1 - min)) + min;
+          var num = ("0" + ran).slice(-3);
+          var newurl =
+            "https://abc" +
+            num +
+            ".contest.atcoder.jp/tasks/abc" +
+            num +
+            "_" +
+            chr;
+          window.open(newurl);
+        }}
+      >
+        本日のAtCoder
+      </button>
     </div>
   );
 }
