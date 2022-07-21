@@ -82,7 +82,7 @@ export default function Home() {
           var arr = ["a", "b", "c", "d"];
           var chr = arr[Math.floor(Math.random() * arr.length)];
           var min = 1;
-          var max = 102;
+          var max = 261;
           var ran = Math.floor(Math.random() * (max + 1 - min)) + min;
           var num = ("0" + ran).slice(-3);
           var newurl =
