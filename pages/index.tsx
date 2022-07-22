@@ -92,7 +92,7 @@ export default function Home() {
             num +
             "_" +
             chr;
-          window.open(newurl);
+          window.open(newurl, "_blank");
         }}
       >
         本日のAtCoder
