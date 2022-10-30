@@ -50,18 +50,6 @@ export default function Home() {
       </h2>
       <ul>
         <li>
-          <h3>
-            <Link href="/posts/2022-07-21">
-              2022/07/21 アルゴリズムの勉強をする①
-            </Link>
-          </h3>
-        </li>
-        <li>
-          <h3>
-            <Link href="/posts/2022-06-04">2022/06/04 Kaggle再入門</Link>
-          </h3>
-        </li>
-        <li>
           {
             // リンクは上に追加する
           }
