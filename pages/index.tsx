@@ -36,6 +36,13 @@ export default function Home() {
         </li>
         <li>
           {" "}
+          <a href="https://mstdn.kgtkr.net/@nekomata#">
+            {" "}
+            <img src="/images/logo-purple.svg" height="50px"></img>
+          </a>
+        </li>
+        <li>
+          {" "}
           <a href="https://www.instagram.com/sub_neko">
             <img
               src="/images/Instagram_Glyph_Gradient_RGB.png"
