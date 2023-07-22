@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
-      {router.asPath.startsWith("/posts") ? (
-        <Link href="/">戻る(=^･ω･^=) </Link>
+      {router.pathname !== "/" ? (
+        <Link href="/">トップページに戻る(=^･ω･^=) </Link>
       ) : null}
     </>
   );
