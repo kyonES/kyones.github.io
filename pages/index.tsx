@@ -43,7 +43,7 @@ export default function Home() {
         </li>
         <li>
           {" "}
-          <a href="https://www.instagram.com/sub_neko">
+          <a href="https://www.instagram.com/what_is_pyoni">
             <img
               src="/images/Instagram_Glyph_Gradient_RGB.png"
               height="50px"
@@ -69,6 +69,17 @@ export default function Home() {
         <li>
           <h3>
             <Link href="/posts/2022-04-06">2022/04/06 初めての投稿</Link>
+          </h3>
+        </li>
+      </ul>
+      <h2>
+        <FontAwesomeIcon icon={faPaw} size="xs" />
+        About Me
+      </h2>
+      <ul>
+        <li>
+          <h3>
+            <Link href="/aboutme/aboutme_2023-07-13">2023/07/13版</Link>
           </h3>
         </li>
       </ul>
