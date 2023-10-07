@@ -79,7 +79,7 @@ export default function Home() {
       <ul>
         <li>
           <h3>
-            <Link href="/aboutme/aboutme_2023-07-13">2023/07/13版</Link>
+            <Link href="/aboutme/aboutme_informal">非公式プロフィール</Link>
           </h3>
         </li>
       </ul>
